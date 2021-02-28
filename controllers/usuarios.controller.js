@@ -71,7 +71,7 @@ const usuariosDelete = async(req = request, res = response) => {
   // Físicamente lo borra de la BD
   // const usuario = await Usuario.findByIdAndDelete(id);
 
-  const usuario = await Usuario.findByIdAndDelete(id, { estado: false });
+  const usuario = await Usuario.findByIdAndUpdate(id, { estado: false });
 
 
 
